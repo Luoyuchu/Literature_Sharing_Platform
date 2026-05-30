@@ -22,9 +22,13 @@ app.component([Loading.name], Loading);
 app.component([View.name], View);
 app.component([Star.name], Star);
 app.component([Search.name], Search);
-document.addEventListener("adobe_dc_view_sdk.ready", () => {
-  app
+app
     .use(store)
     .use(router)
     .mount("#app");
-});
+// document.addEventListener("adobe_dc_view_sdk.ready", () => {
+//   app
+//     .use(store)
+//     .use(router)
+//     .mount("#app");
+// });
